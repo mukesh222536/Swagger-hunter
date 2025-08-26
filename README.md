@@ -32,7 +32,7 @@ Python 3.8+
 
 Install required packages (httpx for async requests):
 
-pip install httpx
+pip install httpx (httpx>=0.27.0)
 
 🚀 **Usage**
 1. Scan a single domain
