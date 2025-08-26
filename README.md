@@ -1,14 +1,14 @@
 # Swagger-hunter
-Swagger-hunter
+**Swagger-hunter**
 
-📌 Swagger / OpenAPI Endpoint Hunter
-
+📌 **Swagger / OpenAPI Endpoint Hunter
+**
 This script automates the detection of publicly exposed Swagger/OpenAPI endpoints on a list of domains.
 It checks across multiple URL patterns and ports (80, 443, 8080, and optionally others during deep scans) to find accessible API documentation endpoints like /swagger.json or /v3/api-docs.
 
 Exposed Swagger/OpenAPI endpoints can reveal sensitive API details, which attackers may exploit.
 
-✅ Features
+✅ **Features**
 
 Scans multiple domains concurrently (asynchronous & fast).
 
@@ -26,7 +26,7 @@ Supports ignoring SSL certificate errors (--insecure).
 
 Allows deep scans with additional ports (8000, 9000).
 
-📦 Requirements
+📦 **Requirements**
 
 Python 3.8+
 
@@ -34,7 +34,7 @@ Install required packages (httpx for async requests):
 
 pip install httpx
 
-🚀 Usage
+🚀 **Usage**
 1. Scan a single domain
 python3 swagger_hunter.py example.com
 
@@ -50,9 +50,4 @@ python3 swagger_hunter.py --list domains.txt --insecure
 5. Enable deep scan (check extra ports)
 python3 swagger_hunter.py --list domains.txt --deep
 
-⚙️ Parameters
-Parameter	Description	Example
-domains	One or more domains passed directly (positional argument).	python3 swagger_hunter.py example.com
---list, -l	File containing domains (one per line).	--list domains.txt
---insecure	Ignore SSL certificate verification errors.	--insecure
---deep	Enable deep scan → adds more ports (8000, 9000 for both HTTP/HTTPS).
+
